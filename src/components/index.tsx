@@ -1,2 +1,3 @@
 export * from './landing';
-export * from './personal-info';
+export * from './info';
+export * from './common';

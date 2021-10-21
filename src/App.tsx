@@ -1,8 +1,13 @@
-import { FC } from 'react';
-export interface AppProps {}
+import Landing from './pages/landing/landing';
+import Routes from './routes/routes';
 
-const App: FC<AppProps> = () => {
-  return <h1>App Component</h1>;
+const App = () => {
+  return (
+    <>
+      <Landing title={'123'} />
+      <Routes />
+    </>
+  );
 };
 
 export default App;

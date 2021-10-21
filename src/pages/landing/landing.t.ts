@@ -1,1 +1,3 @@
-export interface LandingProps {}
+export interface LandingProps {
+  title: string;
+}
