@@ -1,11 +1,11 @@
-import Landing from './pages/landing/landing';
 import Routes from './routes/routes';
+import { GlobalStyle } from './components';
 
 const App = () => {
   return (
     <>
-      <Landing title={'123'} />
       <Routes />
+      <GlobalStyle />
     </>
   );
 };

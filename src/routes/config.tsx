@@ -35,7 +35,7 @@ export const routes: IRoute[] = [
   {
     path: '',
     exact: false,
-    redirect: '/',
+    component: lazy(() => import('../pages/not-found/not-found')),
     fallback: <div>Loading...</div>,
   },
 ];
