@@ -1,3 +1,3 @@
 export * from './landing';
-export * from './info';
+export * from './register';
 export * from './common';
