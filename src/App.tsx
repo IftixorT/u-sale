@@ -1,18 +1,16 @@
-import React from 'react';
-import './App.css';
+import Routes from './routes/routes';
+import { GlobalStyle } from './components';
 
-function App() {
+const App = () => {
   return (
-    <div className='App'>
-      <h1>Salom Otabek</h1>
-    </div>
+    <>
+      <Routes />
+      <GlobalStyle />
+    </>
   );
-}
+};
 
 export default App;
-
-
-
 
 /**
  *  #1 -> git add .
