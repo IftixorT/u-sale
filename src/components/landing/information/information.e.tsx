@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { InformationETypes } from './information.e-types';
+
+
 
 export const Wrapper = styled.div`
    width: 80vw;
@@ -7,11 +10,11 @@ export const Wrapper = styled.div`
       width: 100vw;      
    }
 `;
-export const InfoWrapper = styled.div`
+export const InfoWrapper = styled.div<InformationETypes>`
    width: 100%;
    display: flex;
    justify-content: space-between;
-   /* flex-direction: ${(isReverse) => isReverse ? "row-reverse" : "row"}; */
+   flex-direction: ${(isReverse) => isReverse ? "row-reverse" : "row"};
    @media screen and (max-width: 768px) {
       flex-direction: column;
       justify-content: flex-start;

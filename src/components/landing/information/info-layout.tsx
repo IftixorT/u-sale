@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const InfoLayout: FC<InformationProps> = ({title, description, imgURL, isReverse}) => {
    return (
-      <InfoWrapper /* isReverse={isReverse} */>
+      <InfoWrapper isReverse={isReverse}>
          <InfoText>
             <InfoTitle> 
                {title}  
