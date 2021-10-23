@@ -3,6 +3,7 @@ import { NavBarProps } from './nav-bar.t';
 import { Wrapper } from './nav-bar.e';
 
 const menu = ['Промокоды', 'Квартиры и дом', 'Работы', 'Магазин'];
+
 const NavBar: FC<NavBarProps> = ({ isLanding }) => {
   return (
     <Wrapper>
