@@ -1,13 +1,12 @@
 import { FC } from 'react';
 import { LandingProps } from './landing.t';
 import { Wrapper } from './landing.e';
-import Hero from '../../components/landing/hero/hero';
+import Information from '../../components/landing/information/information';
 
 const Landing: FC<LandingProps> = () => {
   return (
     <Wrapper>
-      Landing Page
-      <Hero />
+      <Information />
     </Wrapper>
   );
 };
