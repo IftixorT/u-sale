@@ -22,6 +22,7 @@ const menu = [
   { text: "Работы", url: "#" },
   { text: "Магазин", url: "#" },
 ];
+
 const NavBar: FC<NavBarProps> = ({ isLanding }) => {
   const [visibleNav, setVisibleNav] = useState(0);
   return (

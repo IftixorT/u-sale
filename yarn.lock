@@ -9783,13 +9783,6 @@
   "resolved" "https://registry.npmjs.org/requires-port/-/requires-port-1.0.0.tgz"
   "version" "1.0.0"
 
-"rerousel@^0.1.9":
-  "integrity" "sha512-Na/KsAqnblyCasFmra3VgQRcMJcGOfFEi9DnyPv+9NvOZZ3mHoM6O9UJfqQFiOrzHxJKle5z0lJfankrVfoJrA=="
-  "resolved" "https://registry.npmjs.org/rerousel/-/rerousel-0.1.9.tgz"
-  "version" "0.1.9"
-  dependencies:
-    "typestyle" "^2.1.0"
-
 "resolve-cwd@^2.0.0":
   "integrity" "sha1-AKn3OHVW4nA46uIyyqNypqWbZlo="
   "resolved" "https://registry.npmjs.org/resolve-cwd/-/resolve-cwd-2.0.0.tgz"
@@ -10869,14 +10862,6 @@
     "stable" "^0.1.8"
     "unquote" "~1.1.1"
     "util.promisify" "~1.0.0"
-
-"swiper@^7.0.9":
-  "integrity" "sha512-Gw2ZCQWYYxDf3BnO50LwFdLT2LRzacgXCgsx8HtgBLHBYx4gAxDJGvuh1/04v9OxJNgE47gDV0FTgEqju1dh0w=="
-  "resolved" "https://registry.npmjs.org/swiper/-/swiper-7.0.9.tgz"
-  "version" "7.0.9"
-  dependencies:
-    "dom7" "^4.0.0"
-    "ssr-window" "^4.0.0"
 
 "symbol-tree@^3.2.4":
   "integrity" "sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw=="
