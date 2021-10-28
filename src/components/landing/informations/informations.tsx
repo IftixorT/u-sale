@@ -9,6 +9,7 @@ import img1 from "../../../assets/images/informations/info1.png";
 import img2 from "../../../assets/images/informations/info2.png";
 import img3 from "../../../assets/images/informations/info3.png";
 import img4 from "../../../assets/images/informations/info4.png";
+import Additional from "./additional/additional";
 
 const sections = [
   {
@@ -62,6 +63,7 @@ const Informations: FC<InformationsProps> = () => {
           ))}
         </Container>
       </InformationsSection>
+      <Additional />
     </React.Fragment>
   );
 };

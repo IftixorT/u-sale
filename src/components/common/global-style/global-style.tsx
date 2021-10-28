@@ -38,4 +38,21 @@ export const FlexItem50 = styled.div`
     margin-top: 50px;
   }
 `;
+
+export const FlexItem30 = styled.div`
+  width: 31%;
+  margin-top: 80px;
+  @media (max-width: 900px) {
+    width: 100% !important;
+    margin-top: 50px;
+  }
+`;
+export const FlexItem25 = styled.div`
+  width: 24%;
+  margin-top: 40px;
+  @media (max-width: 900px) {
+    width: 43% !important;
+    margin-top: 20px;
+  }
+`;
 export default GlobalStyle;
