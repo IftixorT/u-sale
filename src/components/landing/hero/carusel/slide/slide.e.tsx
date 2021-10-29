@@ -14,12 +14,16 @@ const SlideStyle = styled.div`
   height: fit-content;
   position: relative;
   img {
-    max-width: 100%;
+    min-height: 200px;
+    flex: 2;
+    min-width: 50%;
     z-index: 0;
     border-radius: 50px;
   }
   div {
-    max-width: 350px;
+    margin-right: 4rem;
+    flex: 1;
+  min-width: 400px;
     overflow: hidden;
     max-height: 600px;
     padding: 65px 100px;
@@ -57,8 +61,9 @@ const SlideStyle = styled.div`
       }
     }
   }
-  @media screen and (max-width: 1200px) {
-    img{
+  @media screen and (max-width: 1250px) {
+    img {
+      min-width: auto;
       width: 100%;
     }
     div {
@@ -66,7 +71,7 @@ const SlideStyle = styled.div`
       max-width: 100%;
       order: 2;
       h1 {
-        font-size:30px;
+        font-size: 30px;
         text-align: center;
         line-height: initial;
       }
@@ -86,8 +91,9 @@ const SlideStyle = styled.div`
   }
   @media screen and (max-width: 540px) {
     div {
-      order: 2;
-      padding: 1rem;
+      margin: auto;
+      min-width: auto;
+      /* padding: 1rem; */
       h1 {
         font-size: 20px;
       }

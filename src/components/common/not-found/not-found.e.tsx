@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
     font-weight: 300;
     font-size: 200px;
     line-height: 242px;
-    color: #136afb;
+    color: var(--main-color);
   }
   .info_title {
     text-align: center;

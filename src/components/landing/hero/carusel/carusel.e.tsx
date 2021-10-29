@@ -49,6 +49,18 @@ const CaruselStyle = styled.div`
   @media screen and (max-width: 540px) {
     padding: 0;
     margin: 0;
+    .slide {
+      &:nth-child(1) {
+        width: 40px;
+        height: 80px;
+        left: -15px;
+      }
+      &:nth-child(2) {
+        right: -15px;
+        width: 40px;
+        height: 80px;
+      }
+    }
   }
 `;
 

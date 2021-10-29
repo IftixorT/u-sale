@@ -12,7 +12,7 @@ const Slide: FC<SlideProps> = ({ img, title, text }) => {
         <p>{text}</p>
         <button>Learn More</button>
       </div>
-      <img src={img} alt="" />
+<img src={img} alt="" />
     </SlideStyle>
   );
 };
