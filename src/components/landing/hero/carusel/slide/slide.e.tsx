@@ -30,17 +30,16 @@ const SlideStyle = styled.div`
     padding-right: 0;
     h1 {
       font-weight: 600;
-      font-size: 36px;
+      font-size: 48px;
       line-height: 48px;
       color: #fb574c;
     }
     p {
-      font-size: 20px;
-      line-height: 1.6;
+      font-size: 28px;
+      line-height: 36px;
       color: #818181;
-      margin: 36px 0;
-      padding-right: 20%;
-      height: 120px;
+      margin-top: 38px;
+      margin-bottom: 48px;
     }
     button {
       width: 230px;
