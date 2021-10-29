@@ -92,34 +92,13 @@ const Discount: FC<DiscountProps> = () => {
             </Flex>
           </DiscountTitle>
           <Flex>
-            <FlexItem25>
-              <DiscountLink href="#">Эльдорадо</DiscountLink>
-              <DiscountLink href="#">FARFETCH</DiscountLink>
-              <DiscountLink href="#">Дочки-Сыночки</DiscountLink>
-              <DiscountLink href="#">Фарфор</DiscountLink>
-              <DiscountLink href="#">М.Видео</DiscountLink>
-            </FlexItem25>
-            <FlexItem25>
-              <DiscountLink href="#">Эльдорадо</DiscountLink>
-              <DiscountLink href="#">FARFETCH</DiscountLink>
-              <DiscountLink href="#">Дочки-Сыночки</DiscountLink>
-              <DiscountLink href="#">Фарфор</DiscountLink>
-              <DiscountLink href="#">М.Видео</DiscountLink>
-            </FlexItem25>
-            <FlexItem25>
-              <DiscountLink href="#">Эльдорадо</DiscountLink>
-              <DiscountLink href="#">FARFETCH</DiscountLink>
-              <DiscountLink href="#">Дочки-Сыночки</DiscountLink>
-              <DiscountLink href="#">Фарфор</DiscountLink>
-              <DiscountLink href="#">М.Видео</DiscountLink>
-            </FlexItem25>
-            <FlexItem25>
-              <DiscountLink href="#">Эльдорадо</DiscountLink>
-              <DiscountLink href="#">FARFETCH</DiscountLink>
-              <DiscountLink href="#">Дочки-Сыночки</DiscountLink>
-              <DiscountLink href="#">Фарфор</DiscountLink>
-              <DiscountLink href="#">М.Видео</DiscountLink>
-            </FlexItem25>
+            {sections.map((item_property) => (
+              <FlexItem25>
+                {item_property.map((item) => (
+                  <DiscountLink href={item.url}>{item.text}</DiscountLink>
+                ))}
+              </FlexItem25>
+            ))}
           </Flex>
         </Container>
       </DiscountSection>
