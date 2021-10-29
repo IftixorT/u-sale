@@ -1,68 +1,169 @@
-import { FC, useState } from 'react';
-import { NavBarProps } from './nav-bar.t';
-import { Container } from '../global-style/global-style';
-import { Flex } from '../global-style/global-style';
-
-// Images
-import logo from '../../../assets/images/nav-bar/logo.png';
+import { FC, useEffect, useState } from "react";
+import { NavBarProps } from "./nav-bar.t";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.js";
+import { Wrapper } from "./nav-bar.e";
+import logo from "../../../assets/images/nav-bar/logo.svg";
+import { IoIosLogOut } from "react-icons/io";
 import {
-  CrimsonBtn,
-  Header,
-  Navbar,
-  NavItem,
-  NavPanel,
-  ResNav,
-  WhiteBtn,
-} from './nav-bar.e';
-import { Link } from 'react-router-dom';
+  IoPersonOutline,
+  IoBagOutline,
+  IoBriefcaseOutline,
+  IoBusinessOutline,
+} from "react-icons/io5";
+import { AiOutlineKey } from "react-icons/ai";
+import { Link } from "react-scroll";
+import { Link as Link1 } from "react-router-dom";
 
-const menu = [
-  { text: 'Промокоды', url: '#' },
-  { text: 'Квартиры и дом', url: '#' },
-  { text: 'Работы', url: '#' },
-  { text: 'Магазин', url: '#' },
+const data = [
+  {
+    name: "Мой профиль",
+    direction: "my_profile",
+    showInmobile: true,
+    icon: IoPersonOutline,
+  },
+  { name: "Промокоды", direction: "promocode", icon: AiOutlineKey },
+  { name: "Квартиры и дом", direction: "kvartira", icon: IoBusinessOutline },
+  { name: "Работы", direction: "rabota", icon: IoBriefcaseOutline },
+  { name: "Магазин", direction: "magazin", icon: IoBagOutline },
+  {
+    name: "Выход",
+    direction: "log_out",
+    showInmobile: true,
+    icon: IoIosLogOut,
+  },
 ];
 
-const NavBar: FC<NavBarProps> = ({ isLanding }) => {
-  const [visibleNav, setVisibleNav] = useState(0);
+const NavBar: FC<NavBarProps> = ({ isLanding, userExist, bg }) => {
+  const [currentScroll, setCurrentScroll] = useState(0);
+  const [hideNav, setHideNav] = useState(true);
+  const [lastScroll, setLastScroll] = useState(currentScroll);
+  useEffect(() => {
+    window.addEventListener("scroll", () => setCurrentScroll(window.scrollY));
+    if (lastScroll <= currentScroll) {
+      setHideNav(true);
+    } else {
+      setHideNav(false);
+    }
+    setLastScroll(currentScroll);
+  }, [currentScroll]);
   return (
-    <Header>
-      <Container>
-        <Flex>
-          <Link to='/'>
-            <img src={logo} alt='U-Sale' />
-          </Link>
-          <ResNav style={!visibleNav ? { left: '-1000%' } : { left: '0' }}>
-            <i
-              onClick={() => setVisibleNav(0)}
-              className='navbar-closer fal fa-times'></i>
-            <Flex className='flex'>
-              <Navbar>
-                <Flex className='flex'>
-                  {menu.map((link, index) => (
-                    <NavItem key={index}>
-                      <a href={link.url}>{link.text}</a>
-                    </NavItem>
-                  ))}
-                </Flex>
-              </Navbar>
-              <NavPanel>
-                <Link to='/register'>
-                  <WhiteBtn>Регистрация</WhiteBtn>
-                </Link>
-                <Link to='/sign-in'>
-                  <CrimsonBtn>Вход</CrimsonBtn>
-                </Link>
-              </NavPanel>
-            </Flex>
-          </ResNav>
-          <i
-            onClick={() => setVisibleNav(1)}
-            className='navbar-controller fas fa-bars'></i>
-        </Flex>
-      </Container>
-    </Header>
+    <Wrapper bg={bg}>
+      <div className="container">
+        <div>
+          <nav
+            className={
+              "navbar navbar-light fixed-top navbar-expand-lg mx-md-5 py-3  " +
+              (currentScroll <= 100 ? "" : hideNav ? "hide-nav " : "show-nav ")
+            }
+          >
+            <div className="container-fluid  p-0">
+              <div className="logo">
+                <Link1 className="nav-link" to="/">
+                  <img src={logo} alt="" />
+                </Link1>
+              </div>
+              {isLanding ? (
+                <>
+                  <button
+                    className="navbar-toggler navbar-toggler-design"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                  >
+                    <span className="navbar-toggler-icon"></span>
+                  </button>
+                  <div
+                    className="offcanvas offcanvas-end"
+                    tabIndex={-1}
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel"
+                  >
+                    <div className="offcanvas-header">
+                      <h3
+                        className="offcanvas-title fw-bolder fs-3"
+                        id="offcanvasNavbarLabel"
+                      >
+                        Мой профиль
+                      </h3>
+                      <button
+                        type="button"
+                        className="btn-close text-reset btn-close-design m-md-3"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div className="offcanvas-body  d-flex align-content-center flex-column flex-lg-row">
+                      <ul className="navbar-nav d-flex justify-content-center flex-lg-grow-1 pt-2 mb-lg-0 mb-4 order-lg-0 order-1 overflow-hidden">
+                        {data.map((item) => (
+                          <li
+                            key={item.name}
+                            data-bs-dismiss="offcanvas"
+                            className={
+                              "nav-item " +
+                              (item.showInmobile
+                                ? userExist
+                                  ? "d-lg-none"
+                                  : "d-none"
+                                : "")
+                            }
+                          >
+                            <Link
+                              spy={true}
+                              className="nav-link"
+                              to={item.direction}
+                              duration={500}
+                            >
+                              <item.icon className="fs-3 me-3 d-lg-none" />
+                              <span> {item.name}</span>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                      <div className={"user " + (userExist ? " " : "d-none")}>
+                        <div className="img">sada</div>
+                        <div className="info">
+                          <div className="name">
+                            <h4 className="fw-bold m-0 ">Hellp</h4>
+                          </div>
+                          <div className="number fs-6 d-lg-none">
+                            *9998901223435
+                          </div>
+                        </div>
+                      </div>
+                      <hr className={userExist ? "" : "d-none"} />
+                      <div
+                        className={
+                          "order-lg-0  order-2 " + (userExist ? "d-none" : "")
+                        }
+                      >
+                        {" "}
+                        <Link1 to="/register">
+                          <button
+                            className="btn  btn-design ms-3 me-3"
+                            type="submit"
+                          >
+                            Регистрация
+                          </button>
+                        </Link1>
+                        <Link1 to="/registratsiya">
+                          <button className="btn btn-design " type="submit">
+                            Вход
+                          </button>
+                        </Link1>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                ""
+              )}
+            </div>
+          </nav>
+        </div>
+      </div>
+    </Wrapper>
   );
 };
-
 export default NavBar;

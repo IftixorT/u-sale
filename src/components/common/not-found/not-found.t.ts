@@ -1,1 +1,3 @@
-export interface NotFoundProps {}
+export interface NotFoundProps {
+  replace(name:string): void;
+}

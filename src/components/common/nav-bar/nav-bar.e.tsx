@@ -1,112 +1,132 @@
 import styled from "styled-components";
+interface Props {
+  bg?: string;
+}
+export const Wrapper = styled.div<Props>`
+  margin-bottom: 120px;
+  .hide-nav {
+    transition: 0.5s linear all;
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  .show-nav {
+    transition: 0.5s linear all;
+    opacity: 1;
+  }
 
-export const Header = styled.header`
-  margin: 50px 0;
-  .navbar-controller {
-    font-size: 24px;
-    cursor: pointer;
-    color: var(--crimson);
-    display: none;
+  nav {
+    background-color: ${(props) => (props.bg ? props.bg : "#fff")};
   }
-  @media (max-width: 900px) {
-    margin: 40px 0;
-    .navbar-controller {
-      display: block;
-    }
-  }
-`;
-export const Navbar = styled.ul`
-  width: 540px;
-  @media (max-width: 1100px) {
-    width: 450px;
-  }
-`;
-export const ResNav = styled.div`
-  width: 80%;
-  transition: 1s all ease-in-out;
-  .navbar-closer {
-    position: absolute;
-    top: 50px;
-    right: 60px;
-    font-size: 28px;
-    color: #fff;
-    cursor: pointer;
-  }
-  @media (max-width: 900px) {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--crimson);
-    color: #fff;
-    .flex {
-      flex-direction: column;
-      a {
-        &:hover {
-          color: #fff;
-        }
-      }
-      * {
-        color: #fff;
-      }
-      ul {
-        margin-top: 60px;
-      }
-      li {
-        margin: 24px 0;
-        a {
-          font-size: 18px;
-        }
-      }
-    }
-  }
-`;
-export const NavItem = styled.li`
-  a {
-    color: var(--gray2);
-    transition: 0.3s all ease-in-out;
-    &:hover {
-      color: var(--crimson);
-    }
-  }
-  @media (max-width: 1100px) {
-    a {
-      font-size: 14px;
-    }
-  }
-`;
-export const NavPanel = styled.div`
   * {
-    margin-left: 15px;
+    font-family: var(--main-font);
+    color: #505050;
   }
-`;
-const btn = `
-  padding: 16px 32px;
-  border-radius: 10px;
-  border: 1px solid transparent;
-  @media (max-width: 1100px) {
-    padding: 8px 16px;
-    font-size: 15px;
+  .logo {
+    cursor: pointer;
   }
-  @media (max-width: 900px) {
-    & {
-      border-color: #fff;
-      display: block;
-      margin-bottom: 8px;
-      text-align: center;
-      padding: 16px 32px;
+  .navbar-toggler-design,
+  .btn-close-design {
+    border: none;
+    box-shadow: none;
+    :active,
+    :hover {
+      box-shadow: 1px 1px 3px #999;
+    }
+    :focus {
+      box-shadow: none;
     }
   }
-`;
-export const WhiteBtn = styled.a`
-  ${btn}
-  color: var(--crimson);
-  border-color: var(--crimson);
-`;
-export const CrimsonBtn = styled.a`
-  ${btn}
-  color: #fff;
-  background-color: var(--crimson);
-  border-color: var(--crimson);
+  .btn-close-design {
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    box-shadow: 1px 1px 3px #999;
+    font-size: 1.2rem;
+  }
+  .offcanvas-end {
+    width: 100%;
+    transition-duration: 0.7s;
+  }
+  li {
+    margin: 0 25px;
+  }
+  @media only screen and (max-width: 1050px) {
+    li {
+      margin: 0 15px;
+    }
+    .user {
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+      }
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    li {
+      display: flex;
+      align-items: center;
+      height: 60px;
+      margin: 5px 15px;
+      :hover {
+      }
+    }
+  }
+  .nav-link::after {
+    display: block;
+    content: "";
+    border-radius: 20px;
+    height: 1px;
+    width: 0%;
+    background-color: var(--main-color);
+    transition: 0.3s linear;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    cursor: pointer;
+    color: #505050;
+    transition: 0.3s ease color;
+    :hover {
+      * {
+        color: var(--main-color);
+      }
+      ::after {
+        width: 100%;
+      }
+    }
+  }
+  .btn-design {
+    color: var(--main-color);
+    box-shadow: none;
+    height: 3rem;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid var(--main-color);
+    background-color: transparent;
+    transition: 0.3s linear all;
+    :hover {
+      background-color: var(--main-color);
+      transition: 0.3s linear all;
+      color: white;
+    }
+    :active {
+      transform: scale(1.1);
+    }
+    :focus {
+      box-shadow: none;
+    }
+  }
+  .user {
+    display: flex;
+    align-items: center;
+    .img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: #999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+    }
+  }
 `;

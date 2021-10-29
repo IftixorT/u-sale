@@ -1,0 +1,102 @@
+/** @format */
+
+import styled from "styled-components";
+const SlideStyle = styled.div`
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #f7f5f5, #f7f5f5),
+    linear-gradient(0deg, #fb574c, #fb574c), #fb574c;
+  border-radius: 50px;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: fit-content;
+  position: relative;
+  img {
+    max-width: 100%;
+    z-index: 0;
+    border-radius: 50px;
+  }
+  div {
+    max-width: 350px;
+    overflow: hidden;
+    max-height: 600px;
+    padding: 65px 100px;
+    padding-right: 0;
+    h1 {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 48px;
+      color: #fb574c;
+    }
+    p {
+      font-size: 28px;
+      line-height: 36px;
+      color: #818181;
+      margin-top: 38px;
+      margin-bottom: 48px;
+    }
+    button {
+      width: 230px;
+      height: 58px;
+      background: #fb574c;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 42px;
+      color: #ffffff;
+      outline: none;
+      border: none;
+      &:hover {
+        background-color: #ff4335;
+      }
+      &:focus {
+        outline: 1px solid #fb574c;
+        box-shadow: 0 0 0 3px rgba(251, 87, 76, 0.25);
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    img{
+      width: 100%;
+    }
+    div {
+      padding: 2rem 1rem;
+      max-width: 100%;
+      order: 2;
+      h1 {
+        font-size:30px;
+        text-align: center;
+        line-height: initial;
+      }
+      p {
+        font-size: 20px;
+        text-align: center;
+        line-height: initial;
+      }
+      button {
+        display: block;
+        margin: auto;
+        height: 50px;
+        font-size: 14px;
+        width: 150px;
+      }
+    }
+  }
+  @media screen and (max-width: 540px) {
+    div {
+      order: 2;
+      padding: 1rem;
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        text-align: center;
+        font-size: 15px;
+      }
+    }
+  }
+`;
+
+export default SlideStyle;
