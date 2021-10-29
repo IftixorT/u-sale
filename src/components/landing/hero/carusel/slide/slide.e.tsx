@@ -14,6 +14,7 @@ const SlideStyle = styled.div`
   height: fit-content;
   position: relative;
   img {
+    object-fit: cover;
     min-height: 200px;
     flex: 2;
     min-width: 50%;
