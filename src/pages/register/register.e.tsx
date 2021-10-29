@@ -148,4 +148,9 @@ export const Wrapper = styled.div`
       }
     }
   }
+  @media only screen and (max-width: 340px) {
+    .item .inputs input {
+      max-width: 200px;
+    }
+  }
 `;
