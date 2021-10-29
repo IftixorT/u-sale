@@ -39,4 +39,7 @@ export const InformationTitle = styled.h2`
     font-size: 40px;
     margin-bottom: 25px;
   }
+  @media (max-width: 600px) {
+    font-size: 24px;
+  }
 `;

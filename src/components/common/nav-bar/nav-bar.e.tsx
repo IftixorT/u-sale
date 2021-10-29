@@ -129,4 +129,5 @@ export const Wrapper = styled.div<Props>`
       margin-right: 20px;
     }
   }
+  
 `;

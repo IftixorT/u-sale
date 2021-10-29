@@ -4,7 +4,6 @@ import { Flex, FlexItem25 } from "../../common/global-style/global-style";
 import { DiscountProps } from "./discount.t";
 import { DiscountLink, DiscountSection, DiscountTitle } from "./doscount.e";
 import discountSvg from "../../../assets/images/discount/discount.png";
-import { idText } from "typescript";
 
 const sections = [
   [
@@ -99,34 +98,6 @@ const Discount: FC<DiscountProps> = () => {
                 ))}
               </FlexItem25>
             ))}
-            <FlexItem25>
-              <DiscountLink href="#">Эльдорадо</DiscountLink>
-              <DiscountLink href="#">FARFETCH</DiscountLink>
-              <DiscountLink href="#">Дочки-Сыночки</DiscountLink>
-              <DiscountLink href="#">Фарфор</DiscountLink>
-              <DiscountLink href="#">М.Видео</DiscountLink>
-            </FlexItem25>
-            <FlexItem25>
-              <DiscountLink href="#">Эльдорадо</DiscountLink>
-              <DiscountLink href="#">FARFETCH</DiscountLink>
-              <DiscountLink href="#">Дочки-Сыночки</DiscountLink>
-              <DiscountLink href="#">Фарфор</DiscountLink>
-              <DiscountLink href="#">М.Видео</DiscountLink>
-            </FlexItem25>
-            <FlexItem25>
-              <DiscountLink href="#">Эльдорадо</DiscountLink>
-              <DiscountLink href="#">FARFETCH</DiscountLink>
-              <DiscountLink href="#">Дочки-Сыночки</DiscountLink>
-              <DiscountLink href="#">Фарфор</DiscountLink>
-              <DiscountLink href="#">М.Видео</DiscountLink>
-            </FlexItem25>
-            <FlexItem25>
-              <DiscountLink href="#">Эльдорадо</DiscountLink>
-              <DiscountLink href="#">FARFETCH</DiscountLink>
-              <DiscountLink href="#">Дочки-Сыночки</DiscountLink>
-              <DiscountLink href="#">Фарфор</DiscountLink>
-              <DiscountLink href="#">М.Видео</DiscountLink>
-            </FlexItem25>
           </Flex>
         </Container>
       </DiscountSection>

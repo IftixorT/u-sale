@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
     color: #136afb;
   }
   .info_title {
-      text-align: center;
+    text-align: center;
     font-weight: 800;
     font-size: 42px;
     line-height: 70px;
@@ -37,8 +37,8 @@ export const Wrapper = styled.div`
     border-radius: 8px;
     background: #201f1f;
     transition: 0.3s linear all;
-    :hover{
-        border: 1px solid #fff;
+    :hover {
+      border: 1px solid #fff;
     }
     :active,
     :focus {
@@ -58,8 +58,7 @@ export const Wrapper = styled.div`
       font-size: 14px;
     }
     button {
-        font-size: 15px;
-
+      font-size: 15px;
     }
   }
 `;

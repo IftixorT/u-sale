@@ -22,10 +22,14 @@ const data = [
     showInmobile: true,
     icon: IoPersonOutline,
   },
-  { name: "Промокоды", direction: "promocode", icon: AiOutlineKey },
-  { name: "Квартиры и дом", direction: "kvartira", icon: IoBusinessOutline },
-  { name: "Работы", direction: "rabota", icon: IoBriefcaseOutline },
-  { name: "Магазин", direction: "magazin", icon: IoBagOutline },
+  { name: "Промокоды", direction: "Лучшие промокоды", icon: AiOutlineKey },
+  {
+    name: "Квартиры и дом",
+    direction: "Квартиры и дом",
+    icon: IoBusinessOutline,
+  },
+  { name: "Магазин", direction: "Интернет-магазин", icon: IoBagOutline },
+  { name: "Работы", direction: "Вакансии и Работа", icon: IoBriefcaseOutline },
   {
     name: "Выход",
     direction: "log_out",
@@ -59,7 +63,11 @@ const NavBar: FC<NavBarProps> = ({ isLanding, userExist, bg }) => {
           >
             <div className="container-fluid  p-0">
               <div className="logo">
-                <Link1 className="nav-link" to="/">
+                <Link1
+                  className="nav-link"
+                  to="/"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   <img src={logo} alt="" />
                 </Link1>
               </div>
