@@ -16,6 +16,7 @@ export const Wrapper = styled.div<Props>`
 
   nav {
     background-color: ${(props) => (props.bg ? props.bg : "#fff")};
+    padding: 20px 3% !important;
   }
   * {
     color: #505050;
@@ -42,6 +43,18 @@ export const Wrapper = styled.div<Props>`
     box-shadow: 1px 1px 3px #999;
     font-size: 1.2rem;
   }
+  .nav-btn {
+    padding: 12px 24px;
+    margin-left: 20px;
+  }
+  .btn-crimson {
+    background-color: var(--crimson) !important;
+    color: #fff !important;
+    &:hover {
+      background-color: #fff !important;
+      color: var(--crimson) !important;
+    }
+  }
   .offcanvas-end {
     width: 100%;
     transition-duration: 0.7s;
@@ -62,6 +75,12 @@ export const Wrapper = styled.div<Props>`
     }
   }
   @media only screen and (max-width: 992px) {
+    nav {
+      padding: 12px 3% !important;
+    }
+    .offcanvas-end {
+      padding: 20px 3%;
+    }
     li {
       display: flex;
       align-items: center;
@@ -70,6 +89,9 @@ export const Wrapper = styled.div<Props>`
       :hover {
       }
     }
+    .nav-link::after {
+      display: none !important;
+    }
   }
   .nav-link::after {
     display: block;
@@ -77,13 +99,14 @@ export const Wrapper = styled.div<Props>`
     border-radius: 20px;
     height: 1px;
     width: 0%;
+    margin-top: 1px;
     background-color: var(--main-color);
     transition: 0.3s linear;
   }
   .navbar-light .navbar-nav .nav-link {
     cursor: pointer;
     color: #505050;
-    transition: 0.3s ease color;
+    transition: 0.5s all ease-in-out;
     :hover {
       * {
         color: var(--main-color);
@@ -128,5 +151,4 @@ export const Wrapper = styled.div<Props>`
       margin-right: 20px;
     }
   }
-  
 `;

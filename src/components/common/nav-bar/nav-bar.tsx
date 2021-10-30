@@ -149,14 +149,17 @@ const NavBar: FC<NavBarProps> = ({ isLanding, userExist, bg }) => {
                         {" "}
                         <Link1 to="/register">
                           <button
-                            className="btn  btn-design ms-3 me-3"
+                            className="btn nav-btn  btn-design ms-3 me-3"
                             type="submit"
                           >
                             Регистрация
                           </button>
                         </Link1>
                         <Link1 to="/registratsiya">
-                          <button className="btn btn-design " type="submit">
+                          <button
+                            className="btn nav-btn btn-crimson btn-design "
+                            type="submit"
+                          >
                             Вход
                           </button>
                         </Link1>

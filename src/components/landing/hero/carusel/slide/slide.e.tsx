@@ -23,23 +23,24 @@ const SlideStyle = styled.div`
   div {
     margin-right: 4rem;
     flex: 1;
-  min-width: 400px;
+    min-width: 400px;
     overflow: hidden;
     max-height: 600px;
     padding: 65px 100px;
     padding-right: 0;
     h1 {
       font-weight: 600;
-      font-size: 48px;
+      font-size: 36px;
       line-height: 48px;
       color: #fb574c;
     }
     p {
-      font-size: 28px;
-      line-height: 36px;
+      font-size: 20px;
+      line-height: 1.6;
       color: #818181;
-      margin-top: 38px;
-      margin-bottom: 48px;
+      margin: 36px 0;
+      padding-right: 20%;
+      height: 120px;
     }
     button {
       width: 230px;

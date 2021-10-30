@@ -20,7 +20,7 @@ const CaruselStyle = styled.div`
     position: absolute;
     width: 62px;
     height: 107px;
-    background: #d5d5d5;
+    background: rgba(0, 0, 0, 0.6);
     opacity: 0.5;
     border-radius: 10px;
     top: 50%;
@@ -38,12 +38,12 @@ const CaruselStyle = styled.div`
       right: -32px;
     }
     &:hover {
-      width: 65px;
-      height: 110px;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     }
     &:active {
-      width: 60px;
-      height: 100px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     }
   }
   @media screen and (max-width: 540px) {

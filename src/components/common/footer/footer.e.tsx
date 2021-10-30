@@ -4,14 +4,15 @@ export const FooterSection = styled.footer`
   padding: 60px 0;
   background-color: #fafafa;
   p {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     margin-top: 30px;
   }
   h3 {
     margin-top: 50px;
-    width: 150px;
+    width: 200px;
     font-weight: 400;
+    font-size: 20px;
   }
   input,
   button {
