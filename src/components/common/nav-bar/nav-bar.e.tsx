@@ -18,7 +18,6 @@ export const Wrapper = styled.div<Props>`
     background-color: ${(props) => (props.bg ? props.bg : "#fff")};
   }
   * {
-    font-family: var(--main-font);
     color: #505050;
   }
   .logo {
@@ -50,9 +49,9 @@ export const Wrapper = styled.div<Props>`
   li {
     margin: 0 25px;
   }
-  @media only screen and (max-width: 1050px) {
+  @media only screen and (max-width: 1095px) {
     li {
-      margin: 0 15px;
+      margin: 0 13px;
     }
     .user {
       img {
@@ -67,7 +66,7 @@ export const Wrapper = styled.div<Props>`
       display: flex;
       align-items: center;
       height: 60px;
-      margin: 5px 15px;
+      margin: 5px 13px;
       :hover {
       }
     }
@@ -129,5 +128,4 @@ export const Wrapper = styled.div<Props>`
       margin-right: 20px;
     }
   }
-  
 `;

@@ -83,7 +83,7 @@ const sections = [
 const Discount: FC<DiscountProps> = () => {
   return (
     <React.Fragment>
-      <DiscountSection> 
+      <DiscountSection>
         <Container>
           <DiscountTitle>
             <Flex className="flex">
@@ -91,10 +91,12 @@ const Discount: FC<DiscountProps> = () => {
             </Flex>
           </DiscountTitle>
           <Flex>
-            {sections.map((item_property) => (
-              <FlexItem25>
-                {item_property.map((item) => (
-                  <DiscountLink href={item.url}>{item.text}</DiscountLink>
+            {sections.map((item_property, discountFlexIndex) => (
+              <FlexItem25 key={discountFlexIndex}>
+                {item_property.map((item, discountInfoIndex) => (
+                  <DiscountLink href={item.url} key={discountInfoIndex}>
+                    {item.text}
+                  </DiscountLink>
                 ))}
               </FlexItem25>
             ))}

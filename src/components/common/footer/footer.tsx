@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC } from "react";
 import { FooterProps } from "./footer.t";
 
 // Images
@@ -11,6 +11,7 @@ import {
   FlexItem25,
 } from "../global-style/global-style";
 
+const href = "#";
 const menu = [
   [
     {
@@ -31,7 +32,7 @@ const menu = [
     },
     {
       text: "Работы",
-      url: "#",
+      url: "#i",
     },
   ],
   [
@@ -64,17 +65,19 @@ const Footer: FC<FooterProps> = (props) => {
       <Container>
         <Flex>
           <FlexItem50>
-            <a href="#">
+            <a href={href}>
               <img src={logo} alt="U-sale" />
             </a>
             <p>Copyright © 2020. LogoIpsum. All rights reserved.</p>
           </FlexItem50>
           <FlexItem50>
             <Flex>
-              {menu.map((menu_property) => (
-                <FlexItem50 className="flex-item-50">
-                  {menu_property.map((item) => (
-                    <FooterLink href={item.url}>{item.text}</FooterLink>
+              {menu.map((menu_property, indexFooterFlex) => (
+                <FlexItem50 className="flex-item-50" key={indexFooterFlex}>
+                  {menu_property.map((item, indexFooterLink) => (
+                    <FooterLink href={item.url} key={indexFooterLink}>
+                      {item.text}
+                    </FooterLink>
                   ))}
                 </FlexItem50>
               ))}
@@ -90,13 +93,13 @@ const Footer: FC<FooterProps> = (props) => {
             </button>
           </FlexItem25>
           <FlexItem25 className="social flex-item-25">
-            <a href="">
+            <a href={href}>
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="">
+            <a href={href}>
               <i className="fab fa-twitter"></i>
             </a>
-            <a href="">
+            <a href={href}>
               <i className="fab fa-instagram"></i>
             </a>
           </FlexItem25>

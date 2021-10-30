@@ -136,16 +136,21 @@ export const Wrapper = styled.div`
       flex-direction: column;
       .inputs {
         input {
-          width: 200px;
+          max-width: 300px;
           padding: 0.4rem 1rem;
         }
       }
     }
     .buttons {
       padding-top: 0;
-      button{
+      button {
         padding: 0.75rem 1rem;
       }
+    }
+  }
+  @media only screen and (max-width: 340px) {
+    .item .inputs input {
+      max-width: 200px;
     }
   }
 `;

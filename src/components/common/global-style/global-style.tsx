@@ -17,6 +17,16 @@ const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
   }
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  }
 `;
 export const Container = styled.div`
   width: 85%;
