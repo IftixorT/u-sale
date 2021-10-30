@@ -6,7 +6,7 @@ const NotFound: FC<NotFoundProps> = ({ history }) => {
   const { replace } = history;
   return (
     <>
-      <NotFoundComp replace={replace}/>
+      <NotFoundComp replace={replace} />
     </>
   );
 };

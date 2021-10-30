@@ -1,8 +1,8 @@
 @font-face {
-   font-family: "SF pro";
-   src: url(./assets/fonts/sf-pro/sf-pro-regular.OTF);
+  font-family: 'SF pro';
+  src: url(./assets/fonts/sf-pro/sf-pro-regular.OTF);
 }
 :root {
-   --main-color: #FB574C;
-   --main-font: "SF pro";
+  --main-color: #fb574c;
+  --main-font: 'SF pro';
 }

@@ -1,6 +1,6 @@
-import Routes from "./routes/routes";
-import { GlobalStyle } from "./components";
-import "./App.css";
+import Routes from './routes/routes';
+import { GlobalStyle } from './components';
+import './App.css';
 
 const App = () => {
   return (

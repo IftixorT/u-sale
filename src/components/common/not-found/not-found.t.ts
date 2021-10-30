@@ -1,3 +1,3 @@
 export interface NotFoundProps {
-  replace(name:string): void;
+  replace(name: string): void;
 }
