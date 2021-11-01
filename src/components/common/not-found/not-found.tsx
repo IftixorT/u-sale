@@ -13,6 +13,7 @@ const NotFound: FC<NotFoundProps> = ({ replace }) => {
       </p>
       <button onClick={() => replace('/')}>
         Go to home <span>&#8599;</span>
+        <h2 className='icon brands fa-twitter circled'> Hello World </h2>
       </button>
     </Wrapper>
   );
