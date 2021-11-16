@@ -1,7 +1,7 @@
 import { FC, useEffect, useState } from "react";
 import { NavBarProps } from "./nav-bar.t";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.js";
+import "bootstrap/dist/js/bootstrap.bundle";
 import { Wrapper } from "./nav-bar.e";
 import logo from "../../../assets/images/nav-bar/logo.svg";
 import { IoIosLogOut } from "react-icons/io";
