@@ -1,8 +1,8 @@
-import { FC } from "react";
-import { StoryProps } from "./story.t";
-import { Container } from "..";
-import { Subtitle, Title } from "../global-style/global-style";
-import { StoryWrapper, Texts, Warning } from "./story.e";
+import { FC } from 'react';
+import { StoryProps } from './story.t';
+import { Container } from '..';
+import { Subtitle, Title } from '../global-style/global-style';
+import { StoryWrapper, Texts, Warning } from './story.e';
 
 const Story: FC<StoryProps> = ({
   title,

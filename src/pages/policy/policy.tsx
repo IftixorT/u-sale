@@ -1,15 +1,15 @@
-import { FC } from "react";
-import { NavBar } from "../../components";
-import Footer from "../../components/common/footer/footer";
-import Story from "../../components/common/story/story";
-import { PolicyProps } from "./policy.t";
+import { FC } from 'react';
+import { NavBar } from '../../components';
+import Footer from '../../components/common/footer/footer';
+import Story from '../../components/common/story/story';
+import { PolicyProps } from './policy.t';
 
 const Policy: FC<PolicyProps> = () => {
   return (
     <>
-      <NavBar userExist={false} bg="#fafafa" isLanding={true} />
+      <NavBar userExist={false} bg='#fafafa' isLanding={true} />
       <Story
-        title="Xavfsizlik siyosati"
+        title='Xavfsizlik siyosati'
         texts1={
           <>
             <p>
@@ -64,7 +64,7 @@ const Policy: FC<PolicyProps> = () => {
             free.
           </>
         }
-        subtitle="A Privacy Policy is Required by Law"
+        subtitle='A Privacy Policy is Required by Law'
         texts2={
           <>
             <p>
