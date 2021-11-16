@@ -6,12 +6,12 @@ const GlobalStyle = createGlobalStyle`
   --gray: "#818181",
   --gray2: "#505050",
 }
-  *{
+  * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
-  ul {
+  ul, li {
     list-style: none;
   }
   a {
