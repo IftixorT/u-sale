@@ -18,7 +18,7 @@ const Register: FC<RegisterProps> = () => {
     <Wrapper>
       <NavBar isLanding={false} userExist={false} bg='#e5e5e5' />
       <div className='about_page'>
-        <h1 className='title'>Personal info</h1>
+        <h1 className='title'>Profil ma’lumotlari</h1>
         <h4 className='info'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
           purus sit amet luctus venenatis.
@@ -27,13 +27,13 @@ const Register: FC<RegisterProps> = () => {
       <form>
         <div className='item'>
           <div className='name'>
-            First Name <span className='asterics'>*</span>
+            F.I.Sh<span className='asterics'>*</span>
             <div className='example'>Ex John Smith</div>
           </div>
           <div className='inputs'>
             <input
               type='text'
-              placeholder='Enter first name here'
+              placeholder='Ismingiz'
               required
               value={registerData.firstName}
               onChange={(e) =>
@@ -45,7 +45,7 @@ const Register: FC<RegisterProps> = () => {
             />
             <input
               type='text'
-              placeholder='Enter last name here'
+              placeholder='Familiyangiz'
               required
               value={registerData.lastName}
               onChange={(e) =>
@@ -59,13 +59,12 @@ const Register: FC<RegisterProps> = () => {
         </div>
         <div className='item'>
           <div className='name'>
-            E-mail
-            <span className='asterics'> *</span>
+            Email<span className='asterics'> *</span>
           </div>
           <div className='inputs'>
             <input
               type='email'
-              placeholder='Enter your email here'
+              placeholder='Email manzilingiz'
               required
               value={registerData.email}
               onChange={(e) =>
@@ -77,7 +76,7 @@ const Register: FC<RegisterProps> = () => {
             />
             <input
               type='number'
-              placeholder='Enter your phone number '
+              placeholder='Telefon raqamingiz '
               required
               value={registerData.phone}
               onChange={(e) =>
@@ -89,7 +88,7 @@ const Register: FC<RegisterProps> = () => {
             />
             <input
               type='text'
-              placeholder='Enter your university name '
+              placeholder='Universtitet nomi '
               required
               value={registerData.university}
               onChange={(e) =>
@@ -103,7 +102,7 @@ const Register: FC<RegisterProps> = () => {
         </div>
         <div className='item'>
           <div className='name'>
-            Profile Picture <span className='asterics'> *</span>
+            Fotosurat <span className='asterics'> *</span>
           </div>
           <div className='inputs'>
             <div className='profile'>
@@ -113,26 +112,27 @@ const Register: FC<RegisterProps> = () => {
         </div>
         <div className='item'>
           <div className='name'>
-            Student ID <span className='asterics'> *</span>
+            Talaba ID<span className='asterics'> *</span>
           </div>
           <div className='inputs'>
             <div className='image-drop'>
               <img src={img_skelton} alt='sd' className='download' />
               <p>
-                Drop your image here, or{' '}
+                Rasmni yuklash uchun
                 <label className='browse' htmlFor='file'>
-                  browse
+                  bu yerga
                 </label>
+                bosing
               </p>
               <input type='file' id='file' />
-              <div className='example'>Supports: JPG, JPEG2000, PNG</div>
+              <div className='example'>Fayllar: JPG, JPEG2000, PNG</div>
             </div>
           </div>
         </div>
         <div className='buttons'>
-          <button>Cancel</button>
+          <button>Bekor qilish</button>
           <button type='submit' onClick={() => console.log(registerData)}>
-            Create Account
+            Akkount yaratish
           </button>
         </div>
       </form>

@@ -90,6 +90,7 @@ export const Wrapper = styled.div`
       display: none;
     }
     .browse {
+      margin: 0px 2px;
       cursor: pointer;
       color: var(--main-color);
     }

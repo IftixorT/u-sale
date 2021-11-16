@@ -16,14 +16,14 @@ const SlideStyle = styled.div`
   img {
     object-fit: cover;
     min-height: 200px;
-    flex: 2;
+    flex: 1;
     min-width: 50%;
     z-index: 0;
     border-radius: 50px;
   }
   div {
     margin-right: 4rem;
-    flex: 1;
+    flex: 2;
     min-width: 400px;
     overflow: hidden;
     max-height: 600px;
@@ -36,7 +36,7 @@ const SlideStyle = styled.div`
       color: #fb574c;
     }
     p {
-      font-size: 28px;
+      font-size: 20px;
       line-height: 36px;
       color: #818181;
       margin-top: 38px;

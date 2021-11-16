@@ -32,27 +32,7 @@ export const routes: IRoute[] = [
     private: false,
     fallback: <div>Loading...</div>,
   },
-  {
-    path: '/privacy_and_policy',
-    component: lazy(() => import('../pages/policy/policy')),
-    exact: true,
-    private: false,
-    fallback: <div>Loading...</div>,
-  },
-  {
-    path: '/blog',
-    component: lazy(() => import('../pages/blog/blog-page')),
-    exact: true,
-    private: false,
-    fallback: <div>Loading...</div>,
-  },
-  {
-    path: '/support',
-    component: lazy(() => import('../pages/support/support')),
-    exact: true,
-    private: false,
-    fallback: <div>Loading...</div>,
-  },
+
   {
     path: '',
     exact: false,

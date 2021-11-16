@@ -15,45 +15,45 @@ const href = "#";
 const menu = [
   [
     {
-      text: "Services",
+      text: "Xizmatlar",
       url: "#",
     },
     {
-      text: "Главная",
+      text: "Bosh saxifa",
       url: "#",
     },
     {
-      text: "Лучшие промокоды",
+      text: "Proomo kodlar",
       url: "#",
     },
     {
-      text: "Квартиры и дом",
+      text: "Kvartiralar va uylar",
       url: "#",
     },
     {
-      text: "Работы",
+      text: "Ishlar",
       url: "#i",
     },
   ],
   [
     {
-      text: "About",
+      text: "Biz haqimizda",
       url: "#",
     },
     {
-      text: "Our Story",
+      text: "Bizning tarix",
       url: "#",
     },
     {
-      text: "Benefits",
+      text: "Foydali",
       url: "#",
     },
     {
-      text: "Team",
+      text: "Jamoa",
       url: "#",
     },
     {
-      text: "Careers",
+      text: "Hamkorlar",
       url: "#",
     },
   ],
@@ -68,7 +68,7 @@ const Footer: FC<FooterProps> = (props) => {
             <a href={href}>
               <img src={logo} alt="U-sale" />
             </a>
-            <p>Copyright © 2020. LogoIpsum. All rights reserved.</p>
+            <p>Copyright © 2020 Usale. Barcha huquqlar himoyalangan</p>
           </FlexItem50>
           <FlexItem50>
             <Flex>
@@ -84,10 +84,10 @@ const Footer: FC<FooterProps> = (props) => {
             </Flex>
           </FlexItem50>
         </Flex>
-        <h3>Subscribe to our newsletter</h3>
+        <h3>Yangiliklarga a’zo bo’lish</h3>
         <Flex>
           <FlexItem25 className="flex-item-25 d-sm-flex">
-            <input placeholder="Email address" type="text" />
+            <input placeholder="Email manzilingiz" type="text" />
             <button>
               <i className="fas fa-arrow-right"></i>
             </button>
