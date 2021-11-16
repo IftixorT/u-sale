@@ -65,4 +65,23 @@ export const FlexItem25 = styled.div`
     margin-top: 20px;
   }
 `;
+
+export const Title = styled.h2`
+  font-size: 36px;
+  color: #292929;
+  text-align: center;
+  padding-bottom: 56px;
+  font-weight: 600;
+  @media (max-width: 600px) {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+`;
+
+export const Subtitle = styled.h3`
+  font-size: 18px;
+  color: #292929;
+  padding: 18px 0;
+  font-weight: 700;
+`;
 export default GlobalStyle;
