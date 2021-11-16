@@ -8,7 +8,7 @@ const Search: FC<SearchProps> = (props) => {
     <Relative>
       <SearchInput
         onChange={(event) => setSearch(event.target.value)}
-        placeholder="Что вы ищите..."
+        placeholder="Nimani izlamoqdasiz?"
         type="text"
       />
       <SearchBtn onClick={() => console.log(search)}>

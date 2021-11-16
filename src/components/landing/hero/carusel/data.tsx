@@ -3,22 +3,22 @@ import img from "../../../../assets/images/carusel/carusel-img.png";
 export const slides = [
   {
     img: img,
-    title: "1 Are you Student?",
-    text: "Lorem ipsum dolor sit amet,consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.",
+    title: "Siz talabamisiz?",
+    text: "Bizning platformamiz taqdim qiladigan barcha qiziqarli xizmatlardan foydalanishni istaysizmi? Unda biz bilan barchasini boshlang.",
   },
   {
     img: img,
-    title: "2 Are you Student?",
-    text: "Lorem ipsum dolor sit amet,consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.",
+    title: "1-Siz talabamisiz?",
+    text: "Bizning platformamiz taqdim qiladigan barcha qiziqarli xizmatlardan foydalanishni istaysizmi? Unda biz bilan barchasini boshlang.",
   },
   {
     img: img,
-    title: "3 Are you Student?",
-    text: "Lorem ipsum dolor sit amet,consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.",
+    title: "2-Siz talabamisiz?",
+    text: "Bizning platformamiz taqdim qiladigan barcha qiziqarli xizmatlardan foydalanishni istaysizmi? Unda biz bilan barchasini boshlang.",
   },
   {
     img: img,
-    title: "4 Are you Student?",
-    text: "Lorem ipsum dolor sit amet,consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.",
+    title: "3-Siz talabamisiz?",
+    text: "Bizning platformamiz taqdim qiladigan barcha qiziqarli xizmatlardan foydalanishni istaysizmi? Unda biz bilan barchasini boshlang.",
   },
 ];

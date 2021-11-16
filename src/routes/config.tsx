@@ -1,4 +1,4 @@
-import { ReactNode, LazyExoticComponent, ComponentType, lazy } from 'react';
+import { ReactNode, LazyExoticComponent, ComponentType, lazy } from "react";
 
 export interface IRoute {
   // Path, like in basic prop
@@ -19,23 +19,24 @@ export interface IRoute {
 
 export const routes: IRoute[] = [
   {
-    path: '/',
-    component: lazy(() => import('../pages/landing/landing')),
+    path: "/",
+    component: lazy(() => import("../pages/landing/landing")),
     exact: true,
     private: false,
     fallback: <div>Loading...</div>,
   },
   {
-    path: '/register',
-    component: lazy(() => import('../pages/register/register')),
+    path: "/register",
+    component: lazy(() => import("../pages/register/register")),
     exact: true,
     private: false,
     fallback: <div>Loading...</div>,
   },
+
   {
-    path: '',
+    path: "",
     exact: false,
-    component: lazy(() => import('../pages/not-found/not-found')),
+    component: lazy(() => import("../pages/not-found/not-found")),
     fallback: <div>Loading...</div>,
   },
 ];
