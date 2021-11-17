@@ -14,15 +14,16 @@ const SlideStyle = styled.div`
   height: fit-content;
   position: relative;
   img {
+    object-fit: cover;
     min-height: 200px;
-    flex: 2;
+    flex: 1;
     min-width: 50%;
     z-index: 0;
     border-radius: 50px;
   }
   div {
     margin-right: 4rem;
-    flex: 1;
+    flex: 2;
     min-width: 400px;
     overflow: hidden;
     max-height: 600px;
@@ -30,17 +31,16 @@ const SlideStyle = styled.div`
     padding-right: 0;
     h1 {
       font-weight: 600;
-      font-size: 36px;
+      font-size: 45px;
       line-height: 48px;
       color: #fb574c;
     }
     p {
-      font-size: 20px;
-      line-height: 1.6;
+      font-size: 18px;
+      line-height: 1.8;
       color: #818181;
-      margin: 36px 0;
-      padding-right: 20%;
-      height: 120px;
+      margin-top: 38px;
+      margin-bottom: 48px;
     }
     button {
       width: 230px;
@@ -96,11 +96,13 @@ const SlideStyle = styled.div`
       min-width: auto;
       /* padding: 1rem; */
       h1 {
-        font-size: 20px;
+        font-size: 28px;
       }
       p {
         text-align: center;
         font-size: 15px;
+        margin: 30px 0;
+        line-height: 1.5;
       }
     }
   }

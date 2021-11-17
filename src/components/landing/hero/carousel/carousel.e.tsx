@@ -2,7 +2,7 @@
 
 import styled from "styled-components";
 
-const CaruselStyle = styled.div`
+const CarouselStyle = styled.div`
   position: relative;
   margin: 100px 2rem;
   .slides {
@@ -20,7 +20,7 @@ const CaruselStyle = styled.div`
     position: absolute;
     width: 62px;
     height: 107px;
-    background: rgba(0, 0, 0, 0.6);
+    background: #d5d5d5;
     opacity: 0.5;
     border-radius: 10px;
     top: 50%;
@@ -38,12 +38,12 @@ const CaruselStyle = styled.div`
       right: -32px;
     }
     &:hover {
-      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      width: 65px;
+      height: 110px;
     }
     &:active {
-      box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
-        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
-        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+      width: 60px;
+      height: 100px;
     }
   }
   @media screen and (max-width: 540px) {
@@ -64,4 +64,4 @@ const CaruselStyle = styled.div`
   }
 `;
 
-export default CaruselStyle;
+export default CarouselStyle;

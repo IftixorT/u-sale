@@ -12,16 +12,13 @@ export const Wrapper = styled.div`
       text-align: center;
       font-weight: 600;
       color: #292929;
-      margin: 20px 0;
     }
     .info {
       font-style: normal;
       font-weight: normal;
+      line-height: 36px;
       text-align: center;
       color: #818181;
-      margin-bottom: 36px;
-      padding: 0 15%;
-      line-height: 1.5;
     }
   }
   form {
@@ -55,15 +52,14 @@ export const Wrapper = styled.div`
       display: flex;
       flex-wrap: wrap;
       input {
-        padding: 0.8rem 2rem !important;
-        margin-right: 30px;
+        /* min-width: 250px; */
+        height: 42px;
+        padding: 0.4rem 2rem;
+        margin-right: 20px;
         margin: 12px;
         border: 1px solid transparent;
         background: #f6f5f5;
         border-radius: 6px;
-        transition: 0.3s all ease-in-out;
-        font-size: 14px;
-        width: 45%;
         :active,
         :focus {
           outline: none;
@@ -89,12 +85,12 @@ export const Wrapper = styled.div`
     .example {
       color: #818181;
       opacity: 0.6;
-      font-size: 14px;
     }
     input[type="file"] {
       display: none;
     }
     .browse {
+      margin: 0px 2px;
       cursor: pointer;
       color: var(--main-color);
     }
@@ -103,10 +99,6 @@ export const Wrapper = styled.div`
     margin: 12px;
     width: 100px;
     border-radius: 50%;
-  }
-  .download {
-    display: inline-block;
-    margin-bottom: 10px;
   }
   .buttons {
     padding: 50px 0;
@@ -140,19 +132,13 @@ export const Wrapper = styled.div`
   }
   @media only screen and (max-width: 560px) {
     padding: 0 1rem;
-    .info {
-      font-size: 14px;
-      padding: 0 10% !important;
-    }
     .item {
       padding: 1.5rem 1rem;
       flex-direction: column;
-      height: auto;
       .inputs {
         input {
-          width: 100%;
+          max-width: 300px;
           padding: 0.4rem 1rem;
-          margin-bottom: 15px;
         }
       }
     }
@@ -161,6 +147,11 @@ export const Wrapper = styled.div`
       button {
         padding: 0.75rem 1rem;
       }
+    }
+  }
+  @media only screen and (max-width: 340px) {
+    .item .inputs input {
+      max-width: 200px;
     }
   }
 `;

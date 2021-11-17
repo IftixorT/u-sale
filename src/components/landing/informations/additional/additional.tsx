@@ -7,23 +7,23 @@ import { AdditionalProps } from "./additional.t";
 const sections = [
   {
     id: 1,
-    title: "Что такое промокод?",
-    info: 'Каждый, кто хоть раз совершал покупку онлайн, наверняка заметил поле "ввести промокод" перед оплатой покупки. Перейдя по ссылке вы узнаете все о промокодах.',
-    urlText: "Подробнее о промокодах и кодах купонов",
+    title: "Promo kod nima o’zi?",
+    info: "Internetda xarid qilgan har bir kishi xarid uchun to‘lovni amalga oshirishdan oldin “promo-kodni kiriting” maydoniga e’tibor bergan bo‘lishi kerak. Havolani bosish orqali siz promo-kodlar haqida hamma narsani bilib olasiz.",
+    urlText: "Promo-kodlar va kupon kodlari haqida ko'proq",
     url: "#",
   },
   {
     id: 2,
-    title: "Шоппинг советы",
-    info: 'Каждый, кто хоть раз совершал покупку онлайн, наверняка заметил поле "ввести промокод" перед оплатой покупки. Перейдя по ссылке вы узнаете все о промокодах.',
-    urlText: "Подробнее о промокодах и кодах купонов",
+    title: "Xarid qilish bo'yicha maslahatlar",
+    info: "Internetda xarid qilgan har bir kishi xarid uchun to‘lovni amalga oshirishdan oldin “promo-kodni kiriting” maydoniga e’tibor bergan bo‘lishi kerak. Havolani bosish orqali siz promo-kodlar haqida hamma narsani bilib olasiz.",
+    urlText: "Promo-kodlar va kupon kodlari haqida ko'proq",
     url: "#",
   },
   {
     id: 3,
-    title: "Подарочные сертификаты",
-    info: 'Каждый, кто хоть раз совершал покупку онлайн, наверняка заметил поле "ввести промокод" перед оплатой покупки. Перейдя по ссылке вы узнаете все о промокодах.',
-    urlText: "Подробнее о промокодах и кодах купонов",
+    title: "Sovg'a sertifikatlari",
+    info: "Internetda xarid qilgan har bir kishi xarid uchun to‘lovni amalga oshirishdan oldin “promo-kodni kiriting” maydoniga e’tibor bergan bo‘lishi kerak. Havolani bosish orqali siz promo-kodlar haqida hamma narsani bilib olasiz.",
+    urlText: "Promo-kodlar va kupon kodlari haqida ko'proq",
     url: "#",
   },
 ];

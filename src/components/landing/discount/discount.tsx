@@ -87,7 +87,7 @@ const Discount: FC<DiscountProps> = () => {
         <Container>
           <DiscountTitle>
             <Flex className="flex">
-              <img src={discountSvg} alt="" /> Магазины со скидками
+              <img src={discountSvg} alt="" /> Chegirmali do'konlar
             </Flex>
           </DiscountTitle>
           <Flex>

@@ -1,7 +1,7 @@
 import { FC, useEffect, useState } from "react";
 import { NavBarProps } from "./nav-bar.t";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle";
+import "bootstrap/dist/js/bootstrap.js";
 import { Wrapper } from "./nav-bar.e";
 import logo from "../../../assets/images/nav-bar/logo.svg";
 import { IoIosLogOut } from "react-icons/io";
@@ -22,14 +22,14 @@ const data = [
     showInmobile: true,
     icon: IoPersonOutline,
   },
-  { name: "Промокоды", direction: "Лучшие промокоды", icon: AiOutlineKey },
+  { name: "Promo kod", direction: "Лучшие промокоды", icon: AiOutlineKey },
   {
-    name: "Квартиры и дом",
+    name: "Kvartiralar va uylar",
     direction: "Квартиры и дом",
     icon: IoBusinessOutline,
   },
-  { name: "Магазин", direction: "Интернет-магазин", icon: IoBagOutline },
-  { name: "Работы", direction: "Вакансии и Работа", icon: IoBriefcaseOutline },
+  { name: "Ishlar", direction: "Вакансии и Работа", icon: IoBriefcaseOutline },
+  { name: "Do’konlar", direction: "Интернет-магазин", icon: IoBagOutline },
   {
     name: "Выход",
     direction: "log_out",
@@ -42,6 +42,7 @@ const NavBar: FC<NavBarProps> = ({ isLanding, userExist, bg }) => {
   const [currentScroll, setCurrentScroll] = useState(0);
   const [hideNav, setHideNav] = useState(true);
   const [lastScroll, setLastScroll] = useState(currentScroll);
+
   useEffect(() => {
     window.addEventListener("scroll", () => setCurrentScroll(window.scrollY));
     if (lastScroll <= currentScroll) {
@@ -51,17 +52,18 @@ const NavBar: FC<NavBarProps> = ({ isLanding, userExist, bg }) => {
     }
     setLastScroll(currentScroll);
   }, [currentScroll]);
+
   return (
     <Wrapper bg={bg}>
       <div className="container">
         <div>
           <nav
             className={
-              "navbar navbar-light fixed-top navbar-expand-lg mx-md-5 py-3  " +
+              "navbar navbar-light fixed-top navbar-expand-lg  py-3  " +
               (currentScroll <= 100 ? "" : hideNav ? "hide-nav " : "show-nav ")
             }
           >
-            <div className="container-fluid  p-0">
+            <div className="container-fluid mx-md-5 p-0">
               <div className="logo">
                 <Link1
                   className="nav-link"
@@ -146,21 +148,20 @@ const NavBar: FC<NavBarProps> = ({ isLanding, userExist, bg }) => {
                           "order-lg-0  order-2 " + (userExist ? "d-none" : "")
                         }
                       >
-                        {" "}
                         <Link1 to="/register">
                           <button
-                            className="btn nav-btn  btn-design ms-3 me-3"
+                            className="btn  btn-design ms-3 me-3"
                             type="submit"
                           >
-                            Регистрация
+                            Ro’yxatdan o’tish
                           </button>
                         </Link1>
                         <Link1 to="/registratsiya">
                           <button
-                            className="btn nav-btn btn-crimson btn-design "
+                            className="btn btn-design btn-red"
                             type="submit"
                           >
-                            Вход
+                            Kirish
                           </button>
                         </Link1>
                       </div>

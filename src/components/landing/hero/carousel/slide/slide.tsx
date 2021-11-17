@@ -10,7 +10,7 @@ const Slide: FC<SlideProps> = ({ img, title, text }) => {
       <div>
         <h1>{title}</h1>
         <p>{text}</p>
-        <button>Learn More</button>
+        <button>Batafsil</button>
       </div>
       <img src={img} alt="" />
     </SlideStyle>

@@ -4,11 +4,7 @@ import { NotFoundComp } from '../../components';
 
 const NotFound: FC<NotFoundProps> = ({ history }) => {
   const { replace } = history;
-  return (
-    <>
-      <NotFoundComp replace={replace}/>
-    </>
-  );
+  return <NotFoundComp replace={replace} />;
 };
 
 export default NotFound;
