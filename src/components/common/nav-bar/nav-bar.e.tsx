@@ -4,10 +4,10 @@ interface Props {
 }
 export const Wrapper = styled.div<Props>`
   margin-bottom: 110px;
+  background-color: ${(props) => (props.bg ? props.bg : "#fff")};
   @media (max-width: 600px) {
     margin-bottom: 80px;
   }
-  background-color: ${(props) => (props.bg ? props.bg : "#fff")};
   .hide-nav {
     transition: 0.5s linear all;
     opacity: 0;
@@ -19,6 +19,7 @@ export const Wrapper = styled.div<Props>`
   }
   nav {
     padding: 20px 3% !important;
+    background-color: ${(props) => (props.bg ? props.bg : "#fff")};
   }
   * {
     color: #505050;

@@ -4,6 +4,7 @@ import { Wrapper } from "./register.e";
 import { NavBar } from "../../components";
 import img_skleton from "../../assets/images/register/image_skleton.png";
 import profile_img from "../../assets/images/register/Ellipse 6.png";
+import TopButton from "../../components/common/top-button/top-button";
 
 const Register: FC<RegisterProps> = () => {
   const [registerData, setRegisterData] = useState({
@@ -136,6 +137,7 @@ const Register: FC<RegisterProps> = () => {
           </button>
         </div>
       </form>
+      <TopButton />
     </Wrapper>
   );
 };

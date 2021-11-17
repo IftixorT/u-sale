@@ -2,6 +2,7 @@ import { FC } from "react";
 import { NavBar } from "../../components";
 import Footer from "../../components/common/footer/footer";
 import Story from "../../components/common/story/story";
+import TopButton from "../../components/common/top-button/top-button";
 import { PolicyProps } from "./policy.t";
 
 const Policy: FC<PolicyProps> = () => {
@@ -91,6 +92,7 @@ const Policy: FC<PolicyProps> = () => {
           </>
         }
       />
+      <TopButton />
       <Footer />
     </>
   );

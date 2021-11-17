@@ -5,6 +5,7 @@ import Hero from "../../components/landing/hero/hero";
 import Informations from "../../components/landing/informations/informations";
 import Discount from "../../components/landing/discount/discount";
 import Footer from "../../components/common/footer/footer";
+import TopButton from "../../components/common/top-button/top-button";
 
 const Landing: FC<LandingProps> = () => {
   return (
@@ -13,6 +14,7 @@ const Landing: FC<LandingProps> = () => {
       <Hero />
       <Informations />
       <Discount />
+      <TopButton />
       <Footer />
     </React.Fragment>
   );
