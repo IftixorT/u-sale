@@ -24,6 +24,7 @@ export const SearchBtn = styled.button`
   position: absolute;
   top: 0;
   right: 0;
+  margin-top: 20px;
   background-color: #fff;
   i {
     color: var(--crimson);
@@ -35,6 +36,7 @@ export const SearchBtn = styled.button`
 
 export const SearchInput = styled.input`
   ${btn}
+  margin-top: 20px;
   width: 100%;
   color: var(--gray);
   &:focus {

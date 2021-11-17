@@ -31,13 +31,13 @@ const SlideStyle = styled.div`
     padding-right: 0;
     h1 {
       font-weight: 600;
-      font-size: 48px;
+      font-size: 45px;
       line-height: 48px;
       color: #fb574c;
     }
     p {
-      font-size: 20px;
-      line-height: 36px;
+      font-size: 18px;
+      line-height: 1.8;
       color: #818181;
       margin-top: 38px;
       margin-bottom: 48px;
@@ -96,11 +96,13 @@ const SlideStyle = styled.div`
       min-width: auto;
       /* padding: 1rem; */
       h1 {
-        font-size: 20px;
+        font-size: 28px;
       }
       p {
         text-align: center;
         font-size: 15px;
+        margin: 30px 0;
+        line-height: 1.5;
       }
     }
   }
