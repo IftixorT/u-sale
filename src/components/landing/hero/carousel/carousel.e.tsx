@@ -2,7 +2,7 @@
 
 import styled from "styled-components";
 
-const CarouselStyle = styled.div`
+const CaruselStyle = styled.div`
   position: relative;
   margin: 100px 2rem;
   .slides {
@@ -64,4 +64,4 @@ const CarouselStyle = styled.div`
   }
 `;
 
-export default CarouselStyle;
+export default CaruselStyle;

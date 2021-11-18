@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Relative = styled.div`
+  margin-top: 110px;
   position: relative;
   width: 100%;
 `;

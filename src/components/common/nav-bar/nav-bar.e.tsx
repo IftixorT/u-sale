@@ -3,11 +3,7 @@ interface Props {
   bg?: string;
 }
 export const Wrapper = styled.div<Props>`
-  margin-bottom: 110px;
-  @media (max-width: 600px) {
-    margin-bottom: 80px;
-  }
-  background-color: ${(props) => (props.bg ? props.bg : "#fff")};
+  margin-bottom: 84px;
   .hide-nav {
     transition: 0.5s linear all;
     opacity: 0;
@@ -17,8 +13,9 @@ export const Wrapper = styled.div<Props>`
     transition: 0.5s linear all;
     opacity: 1;
   }
+
   nav {
-    padding: 20px 3% !important;
+    background-color: ${(props) => (props.bg ? props.bg : "#fff")};
   }
   * {
     color: #505050;
@@ -52,9 +49,11 @@ export const Wrapper = styled.div<Props>`
   li {
     margin: 0 25px;
   }
-  @media only screen and (max-width: 1095px) {
+  @media only screen and (max-width: 1115px) {
     li {
-      margin: 0 13px;
+      font-size: 15px;
+
+      margin: 0 12px;
     }
     .user {
       img {

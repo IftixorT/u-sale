@@ -1,39 +1,39 @@
-import { FC, useState } from 'react';
-import { RegisterProps } from './register.t';
-import { Wrapper } from './register.e';
-import { NavBar } from '../../components';
-import img_skelton from '../../assets/images/register/image_skleton.png';
-import profile_img from '../../assets/images/register/Ellipse 6.png';
+import { FC, useState } from "react";
+import { RegisterProps } from "./register.t";
+import { Wrapper } from "./register.e";
+import { NavBar } from "../../components";
+import profile_img from "../../assets/images/register/Ellipse 6.png";
+import Dropzone from "./drozone/dropzone";
 
 const Register: FC<RegisterProps> = () => {
   const [registerData, setRegisterData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    university: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    university: "",
   });
   console.log(registerData);
   return (
     <Wrapper>
-      <NavBar isLanding={false} userExist={false} bg='#e5e5e5' />
-      <div className='about_page'>
-        <h1 className='title'>Profil ma’lumotlari</h1>
-        <h4 className='info'>
+      <NavBar isLanding={false} userExist={false} bg="#e5e5e5" />
+      <div className="about_page">
+        <h1 className="title">Profil ma’lumotlari</h1>
+        <h4 className="info">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
           purus sit amet luctus venenatis.
         </h4>
       </div>
       <form>
-        <div className='item'>
-          <div className='name'>
-            F.I.Sh<span className='asterics'>*</span>
-            <div className='example'>Ex John Smith</div>
+        <div className="item">
+          <div className="name">
+            F.I.Sh<span className="asterics">*</span>
+            <div className="example">Ex John Smith</div>
           </div>
-          <div className='inputs'>
+          <div className="inputs">
             <input
-              type='text'
-              placeholder='Ismingiz'
+              type="text"
+              placeholder="Ismingiz"
               required
               value={registerData.firstName}
               onChange={(e) =>
@@ -44,8 +44,8 @@ const Register: FC<RegisterProps> = () => {
               }
             />
             <input
-              type='text'
-              placeholder='Familiyangiz'
+              type="text"
+              placeholder="Familiyangiz"
               required
               value={registerData.lastName}
               onChange={(e) =>
@@ -57,14 +57,14 @@ const Register: FC<RegisterProps> = () => {
             />
           </div>
         </div>
-        <div className='item'>
-          <div className='name'>
-            Email<span className='asterics'> *</span>
+        <div className="item">
+          <div className="name">
+            Email<span className="asterics"> *</span>
           </div>
-          <div className='inputs'>
+          <div className="inputs">
             <input
-              type='email'
-              placeholder='Email manzilingiz'
+              type="email"
+              placeholder="Email manzilingiz"
               required
               value={registerData.email}
               onChange={(e) =>
@@ -75,8 +75,8 @@ const Register: FC<RegisterProps> = () => {
               }
             />
             <input
-              type='number'
-              placeholder='Telefon raqamingiz '
+              type="number"
+              placeholder="Telefon raqamingiz "
               required
               value={registerData.phone}
               onChange={(e) =>
@@ -87,8 +87,8 @@ const Register: FC<RegisterProps> = () => {
               }
             />
             <input
-              type='text'
-              placeholder='Universtitet nomi '
+              type="text"
+              placeholder="Universtitet nomi "
               required
               value={registerData.university}
               onChange={(e) =>
@@ -100,38 +100,25 @@ const Register: FC<RegisterProps> = () => {
             />
           </div>
         </div>
-        <div className='item'>
-          <div className='name'>
-            Fotosurat <span className='asterics'> *</span>
+        <div className="item">
+          <div className="name">
+            Fotosurat <span className="asterics"> *</span>
           </div>
-          <div className='inputs'>
-            <div className='profile'>
-              <img src={profile_img} alt='sd' className='profile_img' />
+          <div className="inputs">
+            <div className="profile">
+              <img src={profile_img} alt="sd" className="profile_img" />
             </div>
           </div>
         </div>
-        <div className='item'>
-          <div className='name'>
-            Talaba ID<span className='asterics'> *</span>
+        <div className="item">
+          <div className="name">
+            Talaba ID<span className="asterics"> *</span>
           </div>
-          <div className='inputs'>
-            <div className='image-drop'>
-              <img src={img_skelton} alt='sd' className='download' />
-              <p>
-                Rasmni yuklash uchun
-                <label className='browse' htmlFor='file'>
-                  bu yerga
-                </label>
-                bosing
-              </p>
-              <input type='file' id='file' />
-              <div className='example'>Fayllar: JPG, JPEG2000, PNG</div>
-            </div>
-          </div>
+          <Dropzone />
         </div>
-        <div className='buttons'>
+        <div className="buttons">
           <button>Bekor qilish</button>
-          <button type='submit' onClick={() => console.log(registerData)}>
+          <button type="submit" onClick={() => console.log(registerData)}>
             Akkount yaratish
           </button>
         </div>
