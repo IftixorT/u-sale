@@ -1,7 +1,7 @@
-import { FC, useState } from "react";
-import { TopButtonProps } from "./top-button.t";
-import { Button } from "./top-button.e";
-import ToTopIcon from "../../../assets/images/icon/toTop.svg";
+import { FC, useState } from 'react';
+import { TopButtonProps } from './top-button.t';
+import { Button } from './top-button.e';
+import ToTopIcon from '../../../assets/images/icon/toTop.svg';
 
 const TopButton: FC<TopButtonProps> = () => {
   const [visible, setVisible] = useState(false);
@@ -18,17 +18,16 @@ const TopButton: FC<TopButtonProps> = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
-  window.addEventListener("scroll", toggleVisible);
+  window.addEventListener('scroll', toggleVisible);
   return (
     <Button
       onClick={scrollToTop}
-      style={{ display: visible ? "inline" : "none" }}
-    >
-      <img src={ToTopIcon} alt="" />
+      style={{ display: visible ? 'inline' : 'none' }}>
+      <img src={ToTopIcon} alt='' />
     </Button>
   );
 };
