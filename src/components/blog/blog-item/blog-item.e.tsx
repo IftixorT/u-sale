@@ -5,6 +5,11 @@ export const Card = styled.div`
   width: 31%;
   margin-bottom: 50px;
   cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
   @media (max-width: 1000px) {
     width: 47%;
   }

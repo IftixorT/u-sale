@@ -98,7 +98,7 @@ export const Wrapper = styled.div<Props>`
   .btn-design {
     color: var(--main-color);
     box-shadow: none;
-    height: 3rem;
+    padding: 10px 28px;
     border: none;
     border-radius: 10px;
     border: 1px solid var(--main-color);

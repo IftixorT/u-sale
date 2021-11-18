@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Flex, FlexItem30 } from "../../common/global-style/global-style";
+import { Flex } from "../../common/global-style/global-style";
 import { BlogItemProps } from "./blog-item-t";
 import {
   Author,
