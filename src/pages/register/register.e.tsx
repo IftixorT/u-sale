@@ -69,32 +69,6 @@ export const Wrapper = styled.div`
       }
     }
   }
-  .image-drop {
-    text-align: center;
-    border-radius: 10px;
-    margin: 12px;
-    min-width: 200px;
-    width: 100%;
-    padding: 1rem;
-    background: #f6f5f5;
-    border: 1px dashed #818181;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .example {
-      color: #818181;
-      opacity: 0.6;
-    }
-    input[type="file"] {
-      display: none;
-    }
-    .browse {
-      margin: 0px 2px;
-      cursor: pointer;
-      color: var(--main-color);
-    }
-  }
   .profile_img {
     margin: 12px;
     width: 100px;
