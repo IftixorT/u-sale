@@ -88,7 +88,7 @@ const Additional: FC<AdditionalProps> = () => {
 
                         <AdditionTitle>{section.title}</AdditionTitle>
                         <p>{section.info}</p>
-                        {/* <a>{section.urlText}</a> */}
+                        <a>{section.urlText}</a>
                         <Accordion items={section.batafsil} />
 
                       </div>
