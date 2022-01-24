@@ -66,6 +66,15 @@ export const FlexItem25 = styled.div`
   }
 `;
 
+export const FlexItem20 = styled.div`
+  width: 20%;
+  margin-top: 35px;
+  @media (max-width: 700px) {
+    width: 40% !important;
+    margin-top: 15px;
+  }
+`;
+
 export const Title = styled.h2`
   font-size: 36px;
   color: #292929;
@@ -84,4 +93,6 @@ export const Subtitle = styled.h3`
   padding: 18px 0;
   font-weight: 700;
 `;
+;
+
 export default GlobalStyle;

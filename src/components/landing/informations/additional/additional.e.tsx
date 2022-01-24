@@ -4,7 +4,7 @@ export const AdditionalSection = styled.section`
   margin: 100px 0;
   margin-top: 50px;
   p {
-    margin: 40px 0;
+    margin: 30px 0;
     color: var(--gray2);
     font-size: 14px;
     line-height: 1.6;
@@ -30,7 +30,7 @@ export const AdditionalSection = styled.section`
 `;
 
 export const AdditionTitle = styled.h2`
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   padding-right: 30%;
   color: var(--crimson);
