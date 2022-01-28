@@ -61,6 +61,30 @@ export const routes: IRoute[] = [
     private: false,
     fallback: <div>Loading...</div>,
   },
+
+///////////////////////////////////////////////////
+  {
+    path: "/policy",
+    component: lazy(() => import("../pages/policy/policy")),
+    exact: true,
+    private: false,
+    fallback: <div>Loading...</div>,
+  },
+  {
+    path: "/qaytarish",
+    component: lazy(() => import("../pages/qaytarish/policy")),
+    exact: true,
+    private: false,
+    fallback: <div>Loading...</div>,
+  },
+  {
+    path: "/foydalanish",
+    component: lazy(() => import("../pages/foydalanish/policy")),
+    exact: true,
+    private: false,
+    fallback: <div>Loading...</div>,
+  },
+///////////////////////////////////////////////////
   {
     path: "",
     exact: false,

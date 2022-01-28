@@ -37,16 +37,16 @@ const menu = [
   ],
   [
     {
-      text: "Biz haqimizda",
-      url: "#",
+      text: "Maxfiylik siyosati",
+      url: "/policy",
     },
     {
-      text: "Bizning tarix",
-      url: "#",
+      text: "Foydalanish shartlari",
+      url: "/foydalanish",
     },
     {
-      text: "Foydali",
-      url: "#",
+      text: "Qaytarish siyosati",
+      url: "/qaytarish",
     },
     {
       text: "Jamoa",
@@ -75,7 +75,7 @@ const Footer: FC<FooterProps> = (props) => {
               {menu.map((menu_property, indexFooterFlex) => (
                 <FlexItem50 className="flex-item-50" key={indexFooterFlex}>
                   {menu_property.map((item, indexFooterLink) => (
-                    <FooterLink href={item.url} key={indexFooterLink}>
+                    <FooterLink href={item.url} key={indexFooterLink}>         
                       {item.text}
                     </FooterLink>
                   ))}

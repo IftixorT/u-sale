@@ -76,39 +76,34 @@ const sections = [
 const Additional: FC<AdditionalProps> = () => {
   return (
     <React.Fragment>
-      <AdditionalSection>
-        <Container>
-          <Flex>
+      <div className="container">
+        <div className="row">
             {sections.map((section) => {
               return (
-                <div>
-                  <div className="container" key={section.id}>
-                    <div className="row" >
-                      <div className="col-md-4">
-
-                        <AdditionTitle>{section.title}</AdditionTitle>
-                        <p>{section.info}</p>
-                        <a>{section.urlText}</a>
-                        <Accordion items={section.batafsil} />
-
-                      </div>
-                    </div>
-                  </div>
-                  {/* <FlexItem50 key={section.id}>
+                <div className="col-md-4">
+                
+                  <div key={section.id}>
                     <AdditionTitle>{section.title}</AdditionTitle>
-                    <p className="info">{section.info}</p> */}
-                  {/* <a href={section.urlText}>{section.urlText}</a> */}
-                  {/* <Flex
-                      className={!section.isReverse ? "flex reverse" : "flex"}
-                    ></Flex>
+                    <p>{section.info}</p>
+                    {/* <a>{section.urlText}</a> */}
                     <Accordion items={section.batafsil} />
-                  </FlexItem50> */}
-                </div>
+                  </div>
+
+              </div>
+               
               );
+              {/* <FlexItem50 key={section.id}>
+                <AdditionTitle>{section.title}</AdditionTitle>
+                <p className="info">{section.info}</p> */}
+              {/* <a href={section.urlText}>{section.urlText}</a> */}
+              {/* <Flex
+                  className={!section.isReverse ? "flex reverse" : "flex"}
+                ></Flex>
+                <Accordion items={section.batafsil} />
+              </FlexItem50> */}
             })}
-          </Flex>
-        </Container>
-      </AdditionalSection>
+        </div>
+      </div>
 
       {/* <AdditionalSection>
         <Container>

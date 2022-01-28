@@ -7,18 +7,18 @@ import { StoryWrapper, Texts, Warning } from './story.e';
 const Story: FC<StoryProps> = ({
   title,
   texts1,
-  warning,
-  subtitle,
-  texts2,
+  // warning,
+  // subtitle,
+  // texts2,
 }) => {
   return (
     <StoryWrapper>
       <Container>
         <Title>{title}</Title>
         <Texts>{texts1}</Texts>
-        <Warning>{warning}</Warning>
+        {/* <Warning>{warning}</Warning>
         <Subtitle>{subtitle}</Subtitle>
-        <Texts>{texts2}</Texts>
+        <Texts>{texts2}</Texts> */}
       </Container>
     </StoryWrapper>
   );
